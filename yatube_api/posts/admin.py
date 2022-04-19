@@ -10,6 +10,7 @@ class PostAdmin(admin.ModelAdmin):
         'text',
         'pub_date',
         'author',
+        'group',
     )
 
 
