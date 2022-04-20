@@ -43,4 +43,4 @@ class Follow(models.Model):
         User, on_delete=models.CASCADE, related_name='following', null=True)
 
     class Meta:
-        unique_together = ['user', 'following']
+        unique_together = ('user', 'following')
