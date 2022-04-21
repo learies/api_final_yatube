@@ -41,7 +41,6 @@ class CommentViewSet(viewsets.ModelViewSet):
 
 
 class FollowViewSet(CreateModelMixin, ListModelMixin, viewsets.GenericViewSet):
-    queryset = Follow.objects.all()
     serializer_class = FollowSerializer
     filter_backends = (SearchFilter,)
     search_fields = ('=user__username', '=following__username')
